@@ -76,12 +76,6 @@ reader.py
     from jenkins.utils import Secret
 
 
-    def check():
-        if sys.version_info[:2] < (3, 4):
-            print("jenkins-cipher requires python-3.4+, exiting ..")
-            sys.exit(-1)
-
-
     def decrypt(opts):
         master_key = open(opts.master_key, 'rb').read()
         hudson_secret_key = open(opts.hudson_key, 'rb').read()
@@ -130,8 +124,8 @@ reader.py
 
 References
 ----------
-- |jenkins_secret_github|
-- |jenkins_python_decrypter|
+- |jenkins_secret_github|_
+- |jenkins_python_decrypter|_
 
 
 .. references
