@@ -55,7 +55,7 @@ setup(
     include_package_data=True,
     zip_safe=False,
     use_scm_version={
-         'write_to': 'jenkins_secret/_version.py',
+         'write_to': 'jenkins/_version.py',
     },
     entry_points={
         'console_scripts': [

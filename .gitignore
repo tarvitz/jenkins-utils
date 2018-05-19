@@ -9,3 +9,5 @@ htmlcov
 dist
 build
 .pytest_cache
+jenkins/_version.py
+.eggs
