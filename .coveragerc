@@ -1,0 +1,14 @@
+[run]
+branch = True
+omit =
+    tests
+    jenkins/utils/secret/__main__.py
+    jenkins/_version.py
+    jenkins/compat.py
+
+[report]
+exclude_lines =
+    pragma: no cover
+
+omit = 
+    .tox
