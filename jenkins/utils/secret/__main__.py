@@ -30,21 +30,17 @@ ENC_TYPE_MAP = {
 }
 
 
-def get_absolute_path(relative_path, lower_case=True):
+def get_absolute_path(relative_path):
     """
     gets absolute path in respect of running operating system (useful to use
     it for volumes registration and so other basic operations)
 
     :param str relative_path: relative path to get absolute path for docker
         volume. Depending on OS it could be different.
-    :param bool lower_case: cast lower case if True (default)
     :rtype: str
     :return: str
     """
-    path = os.path.abspath(relative_path).replace('\\', '/')
-    if lower_case:
-        return path.lower()
-    return path
+    return os.path.normcase(os.path.abspath(relative_path))
 
 
 def main(opts):
