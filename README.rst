@@ -31,12 +31,6 @@ Requirements
 - pycrypto (non windows systems)
 - pycryptodomex (windows)
 
-.. note::
-
-    Does not work automatically on python-3.7 and Windows due to inavailability
-    to build pycrypto module on host system, however any of installed
-    pycrypto/pycryptodomex modules are supported on any os/platform.
-
 Usage
 -----
 
