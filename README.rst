@@ -129,3 +129,21 @@ References
 
 .. |jenkins_python_decrypter| replace:: Jenkins python decrypter
 .. _jenkins_python_decrypter: https://github.com/tweksteen/jenkins-decrypt/blob/master/decrypt.py
+
+Obain secrets from Jenkins Master
+---------------------------------
+
+In case if you just need to receive unencrypted content of your jenkins secrets and you are an admin of your jenkins master you can simply use the following `script <https://devops.stackexchange.com/questions/2191/how-to-decrypt-jenkins-passwords-from-credentials-xml#8692>`_ at http://<your-jenkins-master>/script
+
+.. code-block:: groovy
+
+    com.cloudbees.plugins.credentials.SystemCredentialsProvider.getInstance().getCredentials().forEach{
+      it.properties.each { prop, val ->
+        println(prop + ' = "' + val + '"')
+      }
+      println("-----------------------")
+    }
+
+And obtain all requried data.
+
+
