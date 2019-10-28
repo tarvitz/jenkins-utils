@@ -3,7 +3,7 @@ Jenkins Utils
 =============
 
 .. image:: https://travis-ci.org/tarvitz/jenkins-utils.svg?branch=master
-    :target: https://travis-ci.org/tarvitz/jenkins-cipher
+    :target: https://travis-ci.org/tarvitz/jenkins-utils
 
 .. image:: https://coveralls.io/repos/github/tarvitz/jenkins-utils/badge.svg?branch=master
   :target: https://coveralls.io/github/tarvitz/jenkins-utils?branch=master
